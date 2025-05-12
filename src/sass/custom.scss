@@ -56,6 +56,12 @@
   src: url("../fonts/BlissPro-ExtraBoldItalic.otf") format("opentype");
 }
 
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+  color: transparent;
+}
+
 input:focus,
 textarea:focus,
 select:focus {
@@ -89,8 +95,10 @@ select:focus {
 
 .custom-input {
   padding: 5px;
+
   
   label {
+    @include source.Input_active;
     @include source.Input_active_Field-Label;
     @include source.Input_active_Field-Label_Field-Label;
 
@@ -112,18 +120,13 @@ select:focus {
     @include source.Input_active_Component_Field_Field-Components_Field-Text;
     @include source.Input_active_Component_Field_Field-Components_Field-Text_Input-Content;
 
-    &::placeholder {
-      @include source.Input_active_Component_Field_Field-Components_Field-Text_Input-Content;
-    }
+
 
     &:hover {
       @include source.Input_hover_Component_Field_Field-Components;
       @include source.Input_hover_Component_Field_Field-Components_Field-Text;
       @include source.Input_hover_Component_Field_Field-Components_Field-Text_Input-Content;
 
-      &::placeholder {
-        @include source.Input_hover_Component_Field_Field-Components_Field-Text_Input-Content;
-      }
     }
 
     &:focus {
@@ -131,9 +134,6 @@ select:focus {
       @include source.Input_selected_Component_Field_Field-Components_Field-Text;
       @include source.Input_selected_Component_Field_Field-Components_Field-Text_Input-Content;
 
-      &::placeholder {
-        @include source.Input_selected_Component_Field_Field-Components_Field-Text_Input-Content;
-      }
     }
   }
 
