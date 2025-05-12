@@ -1,3 +1,4 @@
+/* Generated Tailwind-SCSS */
 @mixin Input_active {
   @apply flex flex-col items-start gap-x-1 gap-y-1 pt-0 pr-0 pb-0 pl-0; 
 }
@@ -95,7 +96,7 @@
 }
 
 @mixin Button_pressed {
-  @apply bg-[#001e78] flex flex-row items-center gap-x-2 gap-y-2 rounded-tl-md rounded-tr-md rounded-br-md rounded-bl-md pt-2.5 pr-4 pb-2.5 pl-4; 
+  @apply bg-[#001e78] flex flex-row items-center gap-x-2 gap-y-2 rounded-tl-md rounded-tr-md rounded-br-md rounded-bl-md pt-2 pr-4 pb-2 pl-4; 
 }
 
 @mixin Button_pressed_Button {
@@ -103,7 +104,7 @@
 }
 
 @mixin Button_Hover {
-  @apply bg-[#405eb8] flex flex-row items-center gap-x-2 gap-y-2 rounded-tl-md rounded-tr-md rounded-br-md rounded-bl-md pt-2.5 pr-4 pb-2.5 pl-4; 
+  @apply bg-[#405eb8] flex flex-row items-center gap-x-2 gap-y-2 rounded-tl-md rounded-tr-md rounded-br-md rounded-bl-md pt-2 pr-4 pb-2 pl-4; 
 }
 
 @mixin Button_Hover_Button {
@@ -111,9 +112,17 @@
 }
 
 @mixin Button_Inactive {
-  @apply bg-[#0028a0] flex flex-row items-center gap-x-2 gap-y-2 rounded-tl-md rounded-tr-md rounded-br-md rounded-bl-md pt-2.5 pr-4 pb-2.5 pl-4; 
+  @apply bg-[#0028a0] flex flex-row items-center gap-x-2 gap-y-2 rounded-tl-md rounded-tr-md rounded-br-md rounded-bl-md pt-2 pr-4 pb-2 pl-4; 
 }
 
 @mixin Button_Inactive_Button {
   @apply text-white font-bliss text-base font-medium flex flex-col; 
+}
+
+@mixin Frame-1 {
+  @apply bg-white flex flex-row items-center gap-x-2.5 gap-y-2.5 pt-2.5 pr-2.5 pb-2.5 pl-2.5; 
+}
+
+@mixin Frame-1_Text-box {
+  @apply text-black font-bliss text-sm font-normal; 
 }
