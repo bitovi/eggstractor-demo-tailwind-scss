@@ -56,6 +56,12 @@
   src: url("../fonts/BlissPro-ExtraBoldItalic.otf") format("opentype");
 }
 
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
 
 .container {
   display: flex;
