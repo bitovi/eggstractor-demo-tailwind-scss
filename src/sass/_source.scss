@@ -1,119 +1,312 @@
+// Generated SCSS Variables
+$spacing-1: 0.25rem;
+$text-theme-red-500: #ba0c2f;
+$font-size-small: 0.875rem;
+$font-weight-400: regular;
+$font-family-bliss-pro: bliss pro;
+$font-leading-small: 1.312rem;
+$spacing-2: 0.5rem;
+$bg-theme-red-100: #f8e7ea;
+$border-radius-rounded: 0.25rem;
+$border-width-border: 0.062rem;
+$border-gray-400: #989a9c;
+$spacing-2-5: 0.625rem;
+$text-gray-600: #585a5c;
+$border-gray-700: #3b3c3e;
+$text-gray-700: #3b3c3e;
+$border-theme-red-500: #ba0c2f;
+$bg-blue-600: #001e78;
+$spacing-4: 1rem;
+$border-radius-rounded-md: 0.375rem;
+$text-white: #ffffff;
+$font-size-base: 1rem;
+$font-weight-500: medium;
+$bg-blue-400: #405eb8;
+$bg-blue-500: #0028a0;
+
+// Generated SCSS Mixins
 @mixin Input_active {
-  @apply flex flex-col items-start gap-x-1 gap-y-1 pt-0 pr-0 pb-0 pl-0; 
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ gap: $spacing-1;
+ padding: 0rem;
+ width: 22.75rem;
 }
-
 @mixin Input_active_Field-Label {
-  @apply flex flex-row items-center gap-x-1 gap-y-1 pt-0 pr-0 pb-0 pl-0; 
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ gap: $spacing-1;
+ padding: 0rem;
+ width: 22.75rem;
+ height: 1.312rem;
 }
-
 @mixin Input_active_Field-Label_Field-Label {
-  @apply text-[#3b3c3e] font-bliss text-sm font-normal; 
+ color: $text-theme-red-500;
+ font-family: $font-family-bliss-pro;
+ font-size: $font-size-small;
+ font-weight: 400;
+ font-style: $font-weight-400;
+ line-height: $font-leading-small;
 }
-
 @mixin Input_active_Component {
-  @apply flex flex-row items-start gap-x-2 gap-y-2 pt-0 pr-0 pb-0 pl-0; 
+ display: flex;
+ flex-direction: row;
+ align-items: flex-start;
+ gap: $spacing-2;
+ padding: 0rem;
+ width: 22.75rem;
 }
-
 @mixin Input_active_Component_Field {
-  @apply flex flex-col items-start gap-x-1 gap-y-1 pt-0 pr-0 pb-0 pl-0; 
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ gap: $spacing-1;
+ padding: 0rem;
+ width: 22.75rem;
 }
-
 @mixin Input_active_Component_Field_Field-Components {
-  @apply bg-white flex flex-row items-start border border-solid border-[#989a9c] rounded-tl rounded-tr rounded-br rounded-bl pt-0 pr-0 pb-0 pl-0; 
+ display: flex;
+ flex-direction: row;
+ align-items: flex-start;
+ padding: 0rem;
+ background: $bg-theme-red-100;
+ width: 22.75rem;
+ border: $border-width-border solid $border-gray-400;
+ box-shadow: inset 0 $border-width-border 0 0 $border-gray-400, inset (-$border-width-border) 0 0 0 $border-gray-400, inset 0 (-$border-width-border) 0 0 $border-gray-400, inset $border-width-border 0 0 0 $border-gray-400;
+ border-radius: $border-radius-rounded;
 }
-
 @mixin Input_active_Component_Field_Field-Components_Field-Text {
-  @apply flex flex-row items-center gap-x-2.5 gap-y-2.5 pt-1 pr-2 pb-1 pl-2; 
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ gap: $spacing-2-5;
+ padding: $spacing-1 $spacing-2;
+ width: 22.75rem;
+ height: 2.5rem;
 }
-
 @mixin Input_active_Component_Field_Field-Components_Field-Text_Input-Content {
-  @apply text-[#585a5c] font-bliss text-sm font-normal flex flex-col; 
+ display: flex;
+ flex-direction: column;
+ color: $text-gray-600;
+ font-family: $font-family-bliss-pro;
+ font-size: $font-size-small;
+ font-weight: 400;
+ font-style: $font-weight-400;
+ line-height: $font-leading-small;
+ width: 21.75rem;
 }
-
 @mixin Input_hover {
-  @apply flex flex-col items-start gap-x-1 gap-y-1 pt-0 pr-0 pb-0 pl-0; 
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ gap: $spacing-1;
+ padding: 0rem;
+ width: 22.75rem;
 }
-
 @mixin Input_hover_Field-Label {
-  @apply flex flex-row items-center gap-x-1 gap-y-1 pt-0 pr-0 pb-0 pl-0; 
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ gap: $spacing-1;
+ padding: 0rem;
+ width: 22.75rem;
+ height: 1.312rem;
 }
-
 @mixin Input_hover_Field-Label_Field-Label {
-  @apply text-[#3b3c3e] font-bliss text-sm font-normal; 
+ color: $text-theme-red-500;
+ font-family: $font-family-bliss-pro;
+ font-size: $font-size-small;
+ font-weight: 400;
+ font-style: $font-weight-400;
+ line-height: $font-leading-small;
 }
-
 @mixin Input_hover_Component {
-  @apply flex flex-row items-start gap-x-2 gap-y-2 pt-0 pr-0 pb-0 pl-0; 
+ display: flex;
+ flex-direction: row;
+ align-items: flex-start;
+ gap: $spacing-2;
+ padding: 0rem;
+ width: 22.75rem;
 }
-
 @mixin Input_hover_Component_Field {
-  @apply flex flex-col items-start gap-x-1 gap-y-1 pt-0 pr-0 pb-0 pl-0; 
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ gap: $spacing-1;
+ padding: 0rem;
+ width: 22.75rem;
 }
-
 @mixin Input_hover_Component_Field_Field-Components {
-  @apply bg-white flex flex-row items-start border border-solid border-[#3b3c3e] rounded-tl rounded-tr rounded-br rounded-bl pt-0 pr-0 pb-0 pl-0; 
+ display: flex;
+ flex-direction: row;
+ align-items: flex-start;
+ padding: 0rem;
+ background: $bg-theme-red-100;
+ width: 22.75rem;
+ border: $border-width-border solid $border-gray-700;
+ box-shadow: inset 0 $border-width-border 0 0 $border-gray-700, inset (-$border-width-border) 0 0 0 $border-gray-700, inset 0 (-$border-width-border) 0 0 $border-gray-700, inset $border-width-border 0 0 0 $border-gray-700;
+ border-radius: $border-radius-rounded;
 }
-
 @mixin Input_hover_Component_Field_Field-Components_Field-Text {
-  @apply flex flex-row items-center gap-x-2.5 gap-y-2.5 pt-1 pr-2 pb-1 pl-2; 
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ gap: $spacing-2-5;
+ padding: $spacing-1 $spacing-2;
+ width: 22.75rem;
+ height: 2.5rem;
 }
-
 @mixin Input_hover_Component_Field_Field-Components_Field-Text_Input-Content {
-  @apply text-[#3b3c3e] font-bliss text-sm font-normal flex flex-col; 
+ display: flex;
+ flex-direction: column;
+ color: $text-gray-700;
+ font-family: $font-family-bliss-pro;
+ font-size: $font-size-small;
+ font-weight: 400;
+ font-style: $font-weight-400;
+ line-height: $font-leading-small;
+ width: 21.75rem;
 }
-
 @mixin Input_selected {
-  @apply flex flex-col items-start gap-x-1 gap-y-1 pt-0 pr-0 pb-0 pl-0; 
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ gap: $spacing-1;
+ padding: 0rem;
+ width: 22.75rem;
 }
-
 @mixin Input_selected_Field-Label {
-  @apply flex flex-row items-center gap-x-1 gap-y-1 pt-0 pr-0 pb-0 pl-0; 
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ gap: $spacing-1;
+ padding: 0rem;
+ width: 22.75rem;
+ height: 1.312rem;
 }
-
 @mixin Input_selected_Field-Label_Field-Label {
-  @apply text-[#3b3c3e] font-bliss text-sm font-normal; 
+ color: $text-theme-red-500;
+ font-family: $font-family-bliss-pro;
+ font-size: $font-size-small;
+ font-weight: 400;
+ font-style: $font-weight-400;
+ line-height: $font-leading-small;
 }
-
 @mixin Input_selected_Component {
-  @apply flex flex-row items-start gap-x-2 gap-y-2 pt-0 pr-0 pb-0 pl-0; 
+ display: flex;
+ flex-direction: row;
+ align-items: flex-start;
+ gap: $spacing-2;
+ padding: 0rem;
+ width: 22.75rem;
 }
-
 @mixin Input_selected_Component_Field {
-  @apply flex flex-col items-start gap-x-1 gap-y-1 pt-0 pr-0 pb-0 pl-0; 
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ gap: $spacing-1;
+ padding: 0rem;
+ width: 22.75rem;
 }
-
 @mixin Input_selected_Component_Field_Field-Components {
-  @apply bg-white flex flex-row items-start border border-solid border-[#405eb8] rounded-tl rounded-tr rounded-br rounded-bl pt-0 pr-0 pb-0 pl-0; 
+ display: flex;
+ flex-direction: row;
+ align-items: flex-start;
+ padding: 0rem;
+ background: $bg-theme-red-100;
+ width: 22.75rem;
+ border: 0.062rem solid $border-theme-red-500;
+ box-shadow: inset 0 0.062rem 0 0 $border-theme-red-500, inset -0.062rem 0 0 0 $border-theme-red-500, inset 0 -0.062rem 0 0 $border-theme-red-500, inset 0.062rem 0 0 0 $border-theme-red-500;
+ border-radius: $border-radius-rounded;
 }
-
 @mixin Input_selected_Component_Field_Field-Components_Field-Text {
-  @apply flex flex-row items-center gap-x-2.5 gap-y-2.5 pt-1 pr-2 pb-1 pl-2; 
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ gap: $spacing-2-5;
+ padding: $spacing-1 $spacing-2;
+ width: 22.75rem;
+ height: 2.5rem;
 }
-
 @mixin Input_selected_Component_Field_Field-Components_Field-Text_Input-Content {
-  @apply text-[#585a5c] font-bliss text-sm font-normal flex flex-col; 
+ display: flex;
+ flex-direction: column;
+ color: $text-gray-600;
+ font-family: $font-family-bliss-pro;
+ font-size: $font-size-small;
+ font-weight: 400;
+ font-style: $font-weight-400;
+ line-height: $font-leading-small;
+ width: 21.75rem;
 }
-
 @mixin Button_pressed {
-  @apply bg-[#001e78] flex flex-row items-center gap-x-2 gap-y-2 rounded-tl-md rounded-tr-md rounded-br-md rounded-bl-md pt-2.5 pr-4 pb-2.5 pl-4; 
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ gap: $spacing-2;
+ padding: $spacing-2-5 $spacing-4;
+ background: $bg-blue-600;
+ justify-content: center;
+ height: 2.5rem;
+ border-radius: $border-radius-rounded-md;
 }
-
 @mixin Button_pressed_Button {
-  @apply text-white font-bliss text-base font-medium flex flex-col; 
+ display: flex;
+ flex-direction: column;
+ color: $text-white;
+ font-family: $font-family-bliss-pro;
+ font-size: $font-size-base;
+ font-weight: 500;
+ font-style: $font-weight-500;
+ line-height: 16px;
+ justify-content: center;
+ text-align: center;
 }
-
 @mixin Button_Hover {
-  @apply bg-[#405eb8] flex flex-row items-center gap-x-2 gap-y-2 rounded-tl-md rounded-tr-md rounded-br-md rounded-bl-md pt-2.5 pr-4 pb-2.5 pl-4; 
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ gap: $spacing-2;
+ padding: $spacing-2-5 $spacing-4;
+ background: $bg-blue-400;
+ justify-content: center;
+ height: 2.5rem;
+ border-radius: $border-radius-rounded-md;
 }
-
 @mixin Button_Hover_Button {
-  @apply text-white font-bliss text-base font-medium flex flex-col; 
+ display: flex;
+ flex-direction: column;
+ color: $text-white;
+ font-family: $font-family-bliss-pro;
+ font-size: $font-size-base;
+ font-weight: 500;
+ font-style: $font-weight-500;
+ line-height: 16px;
+ justify-content: center;
+ text-align: center;
 }
-
 @mixin Button_Inactive {
-  @apply bg-[#0028a0] flex flex-row items-center gap-x-2 gap-y-2 rounded-tl-md rounded-tr-md rounded-br-md rounded-bl-md pt-2.5 pr-4 pb-2.5 pl-4; 
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ gap: $spacing-2;
+ padding: $spacing-2-5 $spacing-4;
+ background: $bg-blue-500;
+ justify-content: center;
+ height: 2.5rem;
+ border-radius: $border-radius-rounded-md;
 }
-
 @mixin Button_Inactive_Button {
-  @apply text-white font-bliss text-base font-medium flex flex-col; 
+ display: flex;
+ flex-direction: column;
+ color: $text-white;
+ font-family: $font-family-bliss-pro;
+ font-size: $font-size-base;
+ font-weight: 500;
+ font-style: $font-weight-500;
+ line-height: 16px;
+ justify-content: center;
+ text-align: center;
 }
