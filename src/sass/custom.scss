@@ -56,10 +56,9 @@
   src: url("../fonts/BlissPro-ExtraBoldItalic.otf") format("opentype");
 }
 
-input::placeholder,
-textarea::placeholder,
-select::placeholder {
-  color: transparent;
+::placeholder {
+  color: transparent !important;
+
 }
 
 input:focus,
@@ -70,7 +69,6 @@ select:focus {
 
 
 .container {
-  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -88,14 +86,23 @@ select:focus {
   gap: 2rem;
 }
 
+.signup-form {
+  @apply flex flex-col gap-4 justify-between
+}
+
 .name-row {
-  gap: 2rem;
   @include source.Input_active_Field-Label;
 }
 
 .custom-input {
-  padding: 5px;
-
+  
+  @include source.Input_active;
+  &:hover {
+    @include source.Input_hover;
+  }
+  &:focus {
+    @include source.Input_selected;
+  }
   
   label {
     @include source.Input_active;
@@ -103,19 +110,18 @@ select:focus {
     @include source.Input_active_Field-Label_Field-Label;
 
     &:hover {
-      @include source.Input_hover;
       @include source.Input_hover_Field-Label;
       @include source.Input_hover_Field-Label_Field-Label;
     }
 
     &:focus {
-      @include source.Input_selected;
       @include source.Input_selected_Field-Label;
       @include source.Input_selected_Field-Label_Field-Label;
     }
   }
 
   input {
+    width: 100%;
     @include source.Input_active_Component_Field_Field-Components;
     @include source.Input_active_Component_Field_Field-Components_Field-Text;
     @include source.Input_active_Component_Field_Field-Components_Field-Text_Input-Content;
