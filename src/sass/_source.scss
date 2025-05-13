@@ -1,3 +1,4 @@
+/* Generated Tailwind-SCSS */
 @mixin Input_active {
   @apply flex flex-col items-start gap-x-1 gap-y-1 pt-0 pr-0 pb-0 pl-0; 
 }
@@ -7,7 +8,7 @@
 }
 
 @mixin Input_active_Field-Label_Field-Label {
-  @apply text-[#3b3c3e] font-bliss text-sm font-normal; 
+  @apply text-red-500 font-bliss text-sm font-normal; 
 }
 
 @mixin Input_active_Component {
@@ -19,15 +20,15 @@
 }
 
 @mixin Input_active_Component_Field_Field-Components {
-  @apply bg-white flex flex-row items-start border border-solid border-[#989a9c] rounded-tl rounded-tr rounded-br rounded-bl pt-0 pr-0 pb-0 pl-0; 
+  @apply bg-white flex flex-row items-start border border-solid border-gray-400 rounded-tl rounded-tr rounded-br rounded-bl pt-0 pr-0 pb-0 pl-0; 
 }
 
 @mixin Input_active_Component_Field_Field-Components_Field-Text {
-  @apply flex flex-row items-center gap-x-2.5 gap-y-2.5 pt-1 pr-2 pb-1 pl-2; 
+  @apply flex flex-row items-center gap-x-2.5 gap-y-2.5 pt-2.5 pr-2 pb-2.5 pl-2; 
 }
 
 @mixin Input_active_Component_Field_Field-Components_Field-Text_Input-Content {
-  @apply text-[#585a5c] font-bliss text-sm font-normal flex flex-col; 
+  @apply text-gray-600 font-bliss text-sm font-normal flex flex-col; 
 }
 
 @mixin Input_hover {
@@ -39,7 +40,7 @@
 }
 
 @mixin Input_hover_Field-Label_Field-Label {
-  @apply text-[#3b3c3e] font-bliss text-sm font-normal; 
+  @apply text-gray-700 font-bliss text-sm font-normal; 
 }
 
 @mixin Input_hover_Component {
@@ -51,15 +52,15 @@
 }
 
 @mixin Input_hover_Component_Field_Field-Components {
-  @apply bg-white flex flex-row items-start border border-solid border-[#3b3c3e] rounded-tl rounded-tr rounded-br rounded-bl pt-0 pr-0 pb-0 pl-0; 
+  @apply bg-white flex flex-row items-start border border-solid border-gray-700 rounded-tl rounded-tr rounded-br rounded-bl pt-0 pr-0 pb-0 pl-0; 
 }
 
 @mixin Input_hover_Component_Field_Field-Components_Field-Text {
-  @apply flex flex-row items-center gap-x-2.5 gap-y-2.5 pt-1 pr-2 pb-1 pl-2; 
+  @apply flex flex-row items-center gap-x-2.5 gap-y-2.5 pt-2.5 pr-2 pb-2.5 pl-2; 
 }
 
 @mixin Input_hover_Component_Field_Field-Components_Field-Text_Input-Content {
-  @apply text-[#3b3c3e] font-bliss text-sm font-normal flex flex-col; 
+  @apply text-gray-700 font-bliss text-sm font-normal flex flex-col; 
 }
 
 @mixin Input_selected {
@@ -71,7 +72,7 @@
 }
 
 @mixin Input_selected_Field-Label_Field-Label {
-  @apply text-[#3b3c3e] font-bliss text-sm font-normal; 
+  @apply text-gray-700 font-bliss text-sm font-normal; 
 }
 
 @mixin Input_selected_Component {
@@ -83,19 +84,19 @@
 }
 
 @mixin Input_selected_Component_Field_Field-Components {
-  @apply bg-white flex flex-row items-start border border-solid border-[#405eb8] rounded-tl rounded-tr rounded-br rounded-bl pt-0 pr-0 pb-0 pl-0; 
+  @apply bg-white flex flex-row items-start border border-solid border-blue-400 rounded-tl rounded-tr rounded-br rounded-bl pt-0 pr-0 pb-0 pl-0; 
 }
 
 @mixin Input_selected_Component_Field_Field-Components_Field-Text {
-  @apply flex flex-row items-center gap-x-2.5 gap-y-2.5 pt-1 pr-2 pb-1 pl-2; 
+  @apply flex flex-row items-center gap-x-2.5 gap-y-2.5 pt-2.5 pr-2 pb-2.5 pl-2; 
 }
 
 @mixin Input_selected_Component_Field_Field-Components_Field-Text_Input-Content {
-  @apply text-[#585a5c] font-bliss text-sm font-normal flex flex-col; 
+  @apply text-gray-600 font-bliss text-sm font-normal flex flex-col; 
 }
 
 @mixin Button_pressed {
-  @apply bg-[#001e78] flex flex-row items-center gap-x-2 gap-y-2 rounded-tl-md rounded-tr-md rounded-br-md rounded-bl-md pt-2.5 pr-4 pb-2.5 pl-4; 
+  @apply bg-blue-600 flex flex-row items-center gap-x-2 gap-y-2 rounded-tl-md rounded-tr-md rounded-br-md rounded-bl-md pt-2 pr-4 pb-2 pl-4; 
 }
 
 @mixin Button_pressed_Button {
@@ -103,7 +104,7 @@
 }
 
 @mixin Button_Hover {
-  @apply bg-[#405eb8] flex flex-row items-center gap-x-2 gap-y-2 rounded-tl-md rounded-tr-md rounded-br-md rounded-bl-md pt-2.5 pr-4 pb-2.5 pl-4; 
+  @apply bg-blue-400 flex flex-row items-center gap-x-2 gap-y-2 rounded-tl-md rounded-tr-md rounded-br-md rounded-bl-md pt-2 pr-4 pb-2 pl-4; 
 }
 
 @mixin Button_Hover_Button {
@@ -111,7 +112,7 @@
 }
 
 @mixin Button_Inactive {
-  @apply bg-[#0028a0] flex flex-row items-center gap-x-2 gap-y-2 rounded-tl-md rounded-tr-md rounded-br-md rounded-bl-md pt-2.5 pr-4 pb-2.5 pl-4; 
+  @apply bg-blue-500 flex flex-row items-center gap-x-2 gap-y-2 rounded-tl-md rounded-tr-md rounded-br-md rounded-bl-md pt-2 pr-4 pb-2 pl-4; 
 }
 
 @mixin Button_Inactive_Button {
