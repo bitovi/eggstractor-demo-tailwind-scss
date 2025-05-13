@@ -95,7 +95,6 @@ select:focus {
 }
 
 .custom-input {
-  
   @include source.Input_active;
   &:hover {
     @include source.Input_hover;
