@@ -58,6 +58,7 @@
 
 ::placeholder {
   color: transparent !important;
+
 }
 
 input:focus,
@@ -94,6 +95,7 @@ select:focus {
 }
 
 .custom-input {
+  
   @include source.Input_active;
   &:hover {
     @include source.Input_hover;
@@ -101,8 +103,9 @@ select:focus {
   &:focus {
     @include source.Input_selected;
   }
-
+  
   label {
+    @include source.Input_active;
     @include source.Input_active_Field-Label;
     @include source.Input_active_Field-Label_Field-Label;
 
