@@ -69,7 +69,6 @@ select:focus {
 
 
 .container {
-  justify-content: center;
   align-items: center;
   min-height: 100vh;
   padding: 2rem;
@@ -92,6 +91,7 @@ select:focus {
 
 .name-row {
   @include source.Input_active_Field-Label;
+  @apply justify-between
 }
 
 .custom-input {
