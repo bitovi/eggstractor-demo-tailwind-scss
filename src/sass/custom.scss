@@ -69,6 +69,7 @@ select:focus {
 
 
 .container {
+  justify-content: space-between;
   align-items: center;
   min-height: 100vh;
   padding: 2rem;
@@ -107,13 +108,15 @@ select:focus {
     @include source.Input_active;
     @include source.Input_active_Field-Label;
     @include source.Input_active_Field-Label_Field-Label;
-
-    &:hover {
+    
+    form:has(label:hover),
+    form:has(input:hover) label {
       @include source.Input_hover_Field-Label;
       @include source.Input_hover_Field-Label_Field-Label;
     }
 
-    &:focus {
+    form:has(label:focus),
+    form:has(input:focus) label {
       @include source.Input_selected_Field-Label;
       @include source.Input_selected_Field-Label_Field-Label;
     }
