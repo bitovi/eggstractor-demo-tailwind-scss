@@ -8,7 +8,7 @@
 }
 
 @mixin Input_active_Field-Label_Field-Label {
-  @apply text-gray-700 font-bliss text-sm font-normal; 
+  @apply text-black font-bliss text-sm font-normal; 
 }
 
 @mixin Input_active_Component {
@@ -40,7 +40,7 @@
 }
 
 @mixin Input_hover_Field-Label_Field-Label {
-  @apply text-gray-700 font-bliss text-sm font-normal; 
+  @apply text-[#9b9da3] font-bliss text-sm font-normal; 
 }
 
 @mixin Input_hover_Component {
@@ -72,7 +72,7 @@
 }
 
 @mixin Input_selected_Field-Label_Field-Label {
-  @apply text-gray-700 font-bliss text-sm font-normal; 
+  @apply text-red-500 font-bliss text-sm font-normal; 
 }
 
 @mixin Input_selected_Component {
